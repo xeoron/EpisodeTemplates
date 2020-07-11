@@ -1,10 +1,9 @@
 #!/usr/bin/perl
-# Name: gen_episodes.pl
+# Name: genEpisodes.pl
 # Author: Jason Campisi
 # Date: 7/11/2020
 # Purpose: Generates a season and episode list template
 # License: Released under GPL v2 or higher. Details here http://www.gnu.org/licenses/gpl.html
-
 
 use strict;
 use Getopt::Long;
@@ -13,7 +12,7 @@ my ($season, $episodes,$nameOfShow, $help) = (0,0,0,0);
 GetOptions("s:s"  =>\$season, "e:s" =>\$episodes, "n=s" =>\$nameOfShow, "help" =>\$help);
 
 sub check(){ # check required data or if help was called
-  if ($help or ($season <=0 or $episodes <=0) ){ 
+  if ($help or ($season <=0 or $episodes <=0)){ 
   print <<EOD;
 GenEpisodes Generates a season and episode list template
     Ussage:        gen_episodes.pl -s=number -e=number
@@ -51,8 +50,7 @@ foreach(1..$season){ #loop for each season
         my $ep=pad($_);
         
         print "$nameOfShow " if ($nameOfShow);
-        print "S" . $s . "E" . $ep . " - \n";
-        
+        print "S" . $s . "E" . $ep . " - \n";  
   }
   print "\n";    #add space between seasons
 }

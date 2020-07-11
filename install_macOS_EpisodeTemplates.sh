@@ -5,8 +5,8 @@
 #For MacOS X.11 or higher
 #Released under the GPL v2 or higher
 
-NAMEGEN="gen_episodes"
-NAMESTRIP="strip_episodes"
+NAMEGEN="genepisodes"
+NAMESTRIP="stripepisodes"
 EXT="pl"
 FILEG="$NAMEGEN.$EXT"
 FILES="$NAMESTRIP.$EXT"

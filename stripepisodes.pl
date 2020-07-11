@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-#Name: strip_epsidoes
+#Name: stripEpsidoes
 #Author: Jason Campisi
 #Date: 7/10/2020
 #Purpose Reset episode lists to just have the episode info. Exmple "S01E01 -" 

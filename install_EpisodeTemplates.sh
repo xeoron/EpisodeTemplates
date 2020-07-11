@@ -4,8 +4,8 @@
 #version 0.3.0
 #Released under the GPL v2 or higher
 
-NAMEGEN="gen_episodes"
-NAMESTRIP="strip_episodes"
+NAMEGEN="genepisodes"
+NAMESTRIP="stripepisodes"
 EXT="pl"
 FILEG="$NAMEGEN.$EXT"
 FILES="$NAMESTRIP.$EXT"
