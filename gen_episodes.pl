@@ -25,7 +25,7 @@ GenEpisodes Generates a season and episode list template
         -n=showName     This will place the name before the each episode line 
         -help
         
-Example: gen_episodes.pl -s=2 -e=3 Nuts
+Example: gen_episodes.pl -s=2 -e=3 n=Nuts
 Nuts S01E01 -
 Nuts S01E02 -
 Nuts S01E03 -
