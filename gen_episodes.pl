@@ -16,16 +16,16 @@ sub check(){ # check required data or if help was called
   if ($help or ($season <=0 or $episodes <=0) ){ 
   print <<EOD;
 GenEpisodes Generates a season and episode list template
-    Ussage:             gen_episodes.pl -s=Seasons -e=Episodes
+    Ussage:        gen_episodes.pl -s=number -e=number
     
-        -s=xxx          Number of Seasons you want to list 
-        -e=xxx          Number of Episodes you wish to have per season
+        -s=value   Number of Seasons you want to list 
+        -e=value   Number of Episodes you wish to have per season
     
     Optional:
         -n=showName     This will place the name before the each episode line 
         -help
         
-Example: gen_episodes.pl 2 3 Nuts
+Example: gen_episodes.pl -s=2 -e=3 Nuts
 Nuts S01E01 -
 Nuts S01E02 -
 Nuts S01E03 -
