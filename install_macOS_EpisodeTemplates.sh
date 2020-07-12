@@ -1,7 +1,7 @@
 #!/bin/sh -e
 #Author: Jason Campisi
 #Date: 7/12/2020
-#version 0.4.0
+#version 0.4.1
 #For MacOS X.11 or higher
 #Released under the GPL v2 or higher
 
@@ -68,7 +68,7 @@ else
 fi
 
 #Do we have python?
-if [[ $EXT =~ .*py.* ]]; then
+if [[ $EXT =~ .*py* ]]; then
     echo " Checking for Python at /usr/bin/python ...";
     if [ "$(whereis python)" != '/usr/bin/python' ]; then
         echo "  Error: Python can not be found.";

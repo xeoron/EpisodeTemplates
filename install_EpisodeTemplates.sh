@@ -66,7 +66,7 @@ else
 fi
 
 #Do we have python?
-if [[ $EXT =~ .*py.* ]]; then
+if [[ $EXT =~ .*py* ]]; then
     echo " Checking for Python at /usr/bin/python ...";
     if [ "$(whereis python)" != '/usr/bin/python' ]; then
         echo "  Error: Python can not be found.";
