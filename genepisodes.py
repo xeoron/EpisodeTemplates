@@ -15,7 +15,7 @@ GenEpisodes Generates a season and episode list template
         showName    This will place the name before the each episode line 
         --help, -h
         
-Example: gen_episodes.pl --s 2 --e 3 Nuts
+Example: gen_episodes.py --s 2 --e 3 Nuts
 Nuts S01E01 -
 Nuts S01E02 -
 Nuts S01E03 -
