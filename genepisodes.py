@@ -6,16 +6,16 @@
 # License: Released under GPL v2 or higher. Details here http://www.gnu.org/licenses/gpl.html
 """
 GenEpisodes Generates a season and episode list template
-    Ussage:        gen_episodes.pl -s=number -e=number
+    Ussage:        gen_episodes.py -s number1 -e number2
     
-        -s=value   Number of Seasons you want to list 
-        -e=value   Number of Episodes you wish to have per season
+        --s value   Number of Seasons you want to list 
+        --e value   Number of Episodes you wish to have per season
     
     Optional:
-        -n=showName     This will place the name before the each episode line 
-        -help
+        showName    This will place the name before the each episode line 
+        --help, -h
         
-Example: gen_episodes.pl -s=2 -e=3 n=Nuts
+Example: gen_episodes.pl --s 2 --e 3 Nuts
 Nuts S01E01 -
 Nuts S01E02 -
 Nuts S01E03 -
