@@ -1,7 +1,7 @@
 #!/bin/sh -e
 #Author: Jason Campisi
 #Date: 7/12/2020
-#version 0.4.0
+#version 0.4.1
 #Released under the GPL v2 or higher
 
 NAMEGEN="genepisodes"
