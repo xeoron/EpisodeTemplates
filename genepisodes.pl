@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # Name: genEpisodes.pl
 # Author: Jason Campisi
-# Date: 7/11/2020
+# Date: 7/12/2020
 # Purpose: Generates a season and episode list template
 # License: Released under GPL v2 or higher. Details here http://www.gnu.org/licenses/gpl.html
 
@@ -38,19 +38,14 @@ EOD
   }
 }#end Check
 
-sub pad($){ #add 0 padding???
-  return ($_ >0 && $_ <10) ? "0$_" : $_;    #if 1->9 pad, otherwise nope  
-}#end pad
-
 check();
 
 foreach(1..$season){ #loop for each season
-    my $s=pad($_);
+    my $s=$_;
     foreach (1..$episodes){ #loop for each episode
-        my $ep=pad($_);
-        
+        my $ep=$_;
         print "$nameOfShow " if ($nameOfShow);
-        print "S" . $s . "E" . $ep . " - \n";  
+        printf("S%02dE%02d - \n", $s, $ep);
   }
   print "\n";    #add space between seasons
 }
