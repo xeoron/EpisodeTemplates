@@ -31,8 +31,8 @@ parser.add_argument('--s', nargs=1, type=int, help="Number of Seasons", required
 parser.add_argument('--e', nargs=1, type=int, help="Number of Episodes", required=True)
 parser.add_argument('show', nargs='?', help="Name of Show")
 
-seasons = int(parser.parse_args().s[0])
-episodes = int(parser.parse_args().e[0])
+seasons = parser.parse_args().s[0]
+episodes = parser.parse_args().e[0]
 nameOfShow = "" if (parser.parse_args().show is None) else parser.parse_args().show
 
 sCount=1
