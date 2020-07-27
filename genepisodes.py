@@ -30,13 +30,13 @@ import argparse
 parser = argparse.ArgumentParser(description='Generate A Seasons/Epsisode Template List!' )
 parser.add_argument('--s', nargs=1, type=int, help="Number of Seasons", required=True) 
 parser.add_argument('--e', nargs=1, type=int, help="Number of Episodes", required=True)
-parser.add_argument('--d', nargs=1, help="Number of Deleted Scenes")
+parser.add_argument('--d', nargs=1, type=int, help="Number of Deleted Scenes")
 parser.add_argument('show', nargs='?', help="Name of Show")
 
 
 seasons = parser.parse_args().s[0]
 episodes = parser.parse_args().e[0]
-deletedScenesCount = 0 if (parser.parse_args().d is None) else int(parser.parse_args().d[0])
+deletedScenesCount = 0 if (parser.parse_args().d is None) else parser.parse_args().d[0]
 nameOfShow = "" if (parser.parse_args().show is None) else parser.parse_args().show
 
 sCount=1
