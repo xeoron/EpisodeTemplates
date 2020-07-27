@@ -39,8 +39,6 @@ episodes = parser.parse_args().e[0]
 deletedScenesCount = 0 if (parser.parse_args().d is None) else int(parser.parse_args().d[0])
 nameOfShow = "" if (parser.parse_args().show is None) else parser.parse_args().show
 
-print ('Delete Scene Total = '+ f'{deletedScenesCount:02}')
-
 sCount=1
 while seasons >= sCount:  #loop for each season
     epCount=1
