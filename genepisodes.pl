@@ -48,7 +48,7 @@ foreach(1..$season){ #loop for each season
         printf("S%02dE%02d - \n", $s, $_);
     }
     
-    foreach ($episodes..($episodes + $dScenes -1)){
+    foreach (($episodes+1)..($episodes + $dScenes)){
         print "$nameOfShow " if ($nameOfShow);
         printf("S%02dE%02d - Deleted Scenes\n", $s, $_);
     }
