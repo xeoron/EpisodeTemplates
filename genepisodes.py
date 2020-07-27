@@ -48,7 +48,7 @@ while seasons >= sCount:  #loop for each season
         print ('S' + f'{sCount:02}' + 'E'+ f'{epCount:02}'+ ' - ')
         epCount +=1
     
-    epTotal = epCount + deletedScenesCount    
+    epTotal = epCount + deletedScenesCount
     while epCount < epTotal:    #if there are deleted scenes... list them
         if len(nameOfShow) > 0:
             print (nameOfShow, end =" ")         

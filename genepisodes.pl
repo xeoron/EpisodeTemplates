@@ -44,9 +44,8 @@ check();
 foreach(1..$season){ #loop for each season
     my $s=$_;
     foreach (1..$episodes){ #loop for each episode
-        my $ep=$_;
         print "$nameOfShow " if ($nameOfShow);
-        printf("S%02dE%02d - \n", $s, $ep);
+        printf("S%02dE%02d - \n", $s, $_);
     }
     
     foreach ($episodes..($episodes + $dScenes -1)){
