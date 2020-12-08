@@ -50,7 +50,7 @@ foreach(1..$season){ #loop for each season
     
     foreach (($episodes+1)..($episodes + $dScenes)){
         print "$nameOfShow " if ($nameOfShow);
-        printf("S%02dE%02d - Deleted Scenes\n", $s, $_);
+        printf("S%02dE%02d - Deleted Scenes: \n", $s, $_);
     }
     print "\n";    #add space between seasons
 }
